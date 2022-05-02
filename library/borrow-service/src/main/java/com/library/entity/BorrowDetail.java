@@ -2,7 +2,6 @@ package com.library.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.ToString;
 
 import java.util.List;
 
@@ -12,7 +11,6 @@ import java.util.List;
  */
 @Data
 @AllArgsConstructor
-@ToString
 public class BorrowDetail {
     User user;
     List<Book> bookList;

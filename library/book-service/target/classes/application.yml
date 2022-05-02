@@ -1,16 +1,19 @@
 server:
   port: 8201
 spring:
-#  datasource:
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://localhost:3306/library?characterEncoding=utf-8&useSSL=false&serverTimezone=Hongkong
-#    username: root
-#    password: root
   application:
     name: book-service
-
-eureka:
-  client:
-    # 跟上面一样，需要指向Eureka服务端地址，这样才能进行注册
-    service-url:
-      defaultZone: http://localhost:8801/eureka, http://localhost:8802/eureka
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/library?characterEncoding=utf-8&useSSL=false&serverTimezone=Hongkong
+    username: root
+    password: root
+  cloud:
+    nacos:
+      discovery:
+        # 配置 Nacos 注册中心地址
+        server-addr: localhost:8848
+        # 修改为南京地区的集群
+        cluster-name: NanJing
+        # 命名空间
+        namespace: 5f3efcde-3a25-41c3-8830-c250575be78d

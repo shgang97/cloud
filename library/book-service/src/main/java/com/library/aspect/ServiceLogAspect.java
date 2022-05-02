@@ -16,7 +16,7 @@ import java.util.Date;
 
 /**
  * @author: shg
- * @create: 2022-05-01 1:50 上午
+ * @create: 2022-04-24 2:29 下午
  */
 @Component
 @Aspect
@@ -31,9 +31,9 @@ public class ServiceLogAspect {
 
     @Before("pointcut()")
     public void before(JoinPoint joinPoint) {
-        // 用户[1.2.3.4],在[xxx]，访问了[com.library.service.xxx()].
+        // 用户[1.2.3.4],在[xxx]，访问了[com.nowcoder.community.service.xxx()].
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
-        String ip;
+        String ip = null;
         if (attributes != null) {
             HttpServletRequest request = attributes.getRequest();
             ip = request.getRemoteHost();
