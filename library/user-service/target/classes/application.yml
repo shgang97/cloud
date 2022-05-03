@@ -16,5 +16,11 @@ spring:
         server-addr: localhost:8848
         # 修改为南京地区的集群
         cluster-name: NanJing
-        # 命名空间
-        namespace: 5f3efcde-3a25-41c3-8830-c250575be78d
+#        # 命名空间
+#        namespace: 5f3efcde-3a25-41c3-8830-c250575be78d
+    sentinel:
+      transport:
+        # 添加监控页面地址即可
+        dashboard: localhost:8858
+      # 关闭Context收敛，这样被监控方法可以进行不同链路的单独控制
+      web-context-unify: false

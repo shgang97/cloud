@@ -1,6 +1,6 @@
-2022-05-02 15:09:38,286 INFO distro notifier started
+2022-05-03 14:23:42,604 INFO distro notifier started
 
-2022-05-02 15:09:56,421 ERROR [NACOS-DISTRO] Error while handling notifying task
+2022-05-03 14:23:50,826 ERROR [NACOS-DISTRO] Error while handling notifying task
 
 java.lang.InterruptedException: null
 	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2056)
@@ -13,3 +13,5 @@ java.lang.InterruptedException: null
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-05-03 14:33:19,399 INFO distro notifier started
+

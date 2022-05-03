@@ -1,5 +1,6 @@
 package com.library.controller;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.library.entity.User;
 import com.library.service.UserService;
 import org.springframework.stereotype.Controller;
@@ -19,6 +20,7 @@ public class UserController {
     UserService service;
 
     //这里以RESTFul风格为例
+    @SentinelResource(value = "user")
     @RequestMapping("/user/{uid}")
     public User findUserById(@PathVariable("uid") int uid){
         return service.getUserById(uid);

@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @author: shg
@@ -16,10 +17,21 @@ import javax.annotation.Resource;
 public class BorrowController {
 
     @Resource
-    BorrowService service;
+    BorrowService borrowService;
 
-    @RequestMapping("/borrow/{uid}")
-    BorrowDetail findBorrowDetails(@PathVariable("uid") int uid){
-        return service.getBorrowDetailByUid(uid);
+    @RequestMapping("/borrow/user/{uid}")
+    BorrowDetail getBorrowDetailByUid(@PathVariable("uid") int uid){
+        return borrowService.findBorrowDetailByUid(uid);
+    }
+
+    @RequestMapping("/borrow/book/{bid}")
+    List<BorrowDetail> findBorrowDetailsByBid(@PathVariable("bid") int bid){
+        return borrowService.findBorrowDetailByBid(bid);
+    }
+
+    @RequestMapping("/borrow/{uid}/{bid}")
+    BorrowDetail findBorrowDetail(@PathVariable("uid") int uid,
+                                  @PathVariable("bid") int bid){
+        return borrowService.findBorrowDetailByUidAndBid(uid, bid);
     }
 }

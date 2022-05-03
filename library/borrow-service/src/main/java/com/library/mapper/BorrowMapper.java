@@ -14,11 +14,11 @@ import java.util.List;
 public interface BorrowMapper {
 
     @Select("select * from DB_BORROW where uid = #{uid}")
-    List<Borrow> getBorrowsByUid(int uid);
+    List<Borrow> selectBorrowsByUid(int uid);
 
     @Select("select * from DB_BORROW where bid = #{bid}")
-    List<Borrow> getBorrowsByBid(int bid);
+    List<Borrow> selectBorrowsByBid(int bid);
 
     @Select("select * from DB_BORROW where bid = #{bid} and uid = #{uid}")
-    Borrow getBorrow(int uid, int bid);
+    Borrow selectBorrowByUidAndBid(int uid, int bid);
 }
