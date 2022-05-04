@@ -14,10 +14,20 @@ import javax.annotation.Resource;
 @Service
 public class BookServiceImpl implements BookService {
     @Resource
-    BookMapper mapper;
+    BookMapper bookMapper;
 
     @Override
-    public Book getBookById(int bid) {
-        return mapper.getBookById(bid);
+    public Book findBookById(int bid) {
+        return bookMapper.getBookById(bid);
+    }
+
+    @Override
+    public boolean updateRemain(int bid, int stock) {
+        return bookMapper.updateStockById(bid, stock) > 0;
+    }
+
+    @Override
+    public int findStockById(int bid) {
+        return bookMapper.selectStockById(bid);
     }
 }

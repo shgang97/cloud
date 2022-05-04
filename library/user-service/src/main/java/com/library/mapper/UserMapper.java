@@ -3,6 +3,7 @@ package com.library.mapper;
 import com.library.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 
 /**
  * @author: shg
@@ -12,4 +13,10 @@ import org.apache.ibatis.annotations.Select;
 public interface UserMapper {
     @Select("select * from DB_USER where uid = #{uid}")
     User getUserById(int uid);
+
+    @Select("select rest from DB_USER where uid = #{uid}")
+    int selectRestById(int uid);
+
+    @Update("update DB_USER set rest = #{rest} where uid = #{id}")
+    int updateRestById(int id, int rest);
 }

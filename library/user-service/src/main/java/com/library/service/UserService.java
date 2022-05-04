@@ -8,4 +8,9 @@ import com.library.entity.User;
  */
 public interface UserService {
     User getUserById(int uid);
+
+    int getRestById(int id);
+
+    int updateRestById(int id, int rest);
+
 }

@@ -18,4 +18,6 @@ public interface BorrowService {
     List<BorrowDetail> findBorrowDetailByBid(int bid);
 
     BorrowDetail findBorrowDetailByUidAndBid(int uid, int bid);
+
+    public boolean doBorrow(int uid, int bid);
 }

@@ -24,3 +24,16 @@ spring:
         dashboard: localhost:8858
       # 关闭Context收敛，这样被监控方法可以进行不同链路的单独控制
       web-context-unify: false
+  session:
+    store-type: redis
+  redis:
+    host: localhost
+    port: 6379
+seata:
+  service:
+    vgroup-mapping:
+      # 这里需要对事务组做映射，默认的分组名为 应用名称-seata-service-group，将其映射到default集群
+      # 这个很关键，一定要配置对，不然会找不到服务
+      user-service-seata-service-group: default
+    grouplist:
+      default: localhost:8868

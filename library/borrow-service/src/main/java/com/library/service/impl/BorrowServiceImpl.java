@@ -10,6 +10,7 @@ import com.library.mapper.BorrowMapper;
 import com.library.service.BorrowService;
 import com.library.service.client.BookClient;
 import com.library.service.client.UserClient;
+import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -74,6 +75,29 @@ public class BorrowServiceImpl implements BorrowService {
         List<Book> books = new ArrayList<>();
         books.add(bookClient.getBookById(borrow.getBid()));
         return new BorrowDetail(user, books);
+    }
+
+    @GlobalTransactional
+    @Override
+    public boolean doBorrow(int uid, int bid) {
+        //1. 判断图书和用户是否都支持借阅
+        if(bookClient.getRemain(bid) < 1)
+            throw new RuntimeException("图书数量不足");
+        if(userClient.findRestById(uid) < 1)
+            throw new RuntimeException("用户借阅量不足");
+        //2. 首先将图书的数量-1
+        if(!bookClient.borrow(bid))
+            throw new RuntimeException("在借阅图书时出现错误！");
+        //3. 添加借阅信息
+        if(borrowMapper.selectBorrowByUidAndBid(uid, bid) != null)
+            throw new RuntimeException("此书籍已经被此用户借阅了！");
+        if(borrowMapper.addBorrow(uid, bid) <= 0)
+            throw new RuntimeException("在录入借阅信息时出现错误！");
+        //4. 用户可借阅-1
+        if(userClient.borrowOneBook(uid) <= 0)
+            throw new RuntimeException("在借阅时出现错误！");
+        //完成
+        return true;
     }
 
 

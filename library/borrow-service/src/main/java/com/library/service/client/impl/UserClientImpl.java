@@ -14,4 +14,14 @@ public class UserClientImpl implements UserClient {
     public User getUserById(int uid) {
         return new User().setName("图书管理员");
     }
+
+    @Override
+    public int findRestById(int id) {
+        return 0;
+    }
+
+    @Override
+    public int borrowOneBook(int id) {
+        return 0;
+    }
 }

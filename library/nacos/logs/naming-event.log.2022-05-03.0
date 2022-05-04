@@ -1,0 +1,226 @@
+2022-05-03 14:24:00,689 ERROR [UPDATE-DOMAIN] Exception while taking item from LinkedBlockingDeque.
+
+2022-05-03 14:37:17,270 INFO DEFAULT_GROUP@@borrow-service {SYNC} {IP-NEW} cluster: NanJing, new ips size: 1, content: [10.102.11.166:8301:unknown:NanJing_1.0_true_false_NanJing]
+
+2022-05-03 14:37:17,277 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 10.102.11.166:8301_true,
+
+2022-05-03 14:37:17,279 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 10.102.11.166:8301_true,
+
+2022-05-03 14:37:17,311 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 10.102.11.166:8301_true,
+
+2022-05-03 14:37:21,943 INFO serviceName: DEFAULT_GROUP@@borrow-service {OTHER} {IP-ENABLED} pre-valid: 10.102.11.166:8301@NanJing in 1, msg: tcp:ok+
+
+2022-05-03 14:37:26,601 INFO serviceName: DEFAULT_GROUP@@borrow-service {POS} {IP-DISABLED} invalid-now: 10.102.11.166:8301@NanJing, region: unknown, msg: tcp:unable2connect:Connection refused
+
+2022-05-03 14:38:24,738 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 10.102.11.166:8301_false,
+
+2022-05-03 14:38:26,066 INFO serviceName: DEFAULT_GROUP@@borrow-service {OTHER} {IP-ENABLED} pre-valid: 10.102.11.166:8301@NanJing in 1, msg: tcp:ok+
+
+2022-05-03 14:38:30,779 INFO serviceName: DEFAULT_GROUP@@borrow-service {OTHER} {IP-ENABLED} pre-valid: 10.102.11.166:8301@NanJing in 2, msg: tcp:ok+
+
+2022-05-03 14:38:34,571 INFO serviceName: DEFAULT_GROUP@@borrow-service {POS} {IP-ENABLED} valid: 10.102.11.166:8301@NanJing, region: unknown, msg: tcp:ok+
+
+2022-05-03 14:40:23,576 INFO DEFAULT_GROUP@@book-service {SYNC} {IP-NEW} cluster: BeiJing, new ips size: 1, content: [10.102.11.166:8202:unknown:BeiJing_1.0_true_false_BeiJing]
+
+2022-05-03 14:40:23,577 INFO [IP-UPDATED] namespace: 5f3efcde-3a25-41c3-8830-c250575be78d, service: DEFAULT_GROUP@@book-service, ips: 10.102.11.166:8202_true,
+
+2022-05-03 14:40:27,387 INFO DEFAULT_GROUP@@book-service {SYNC} {IP-NEW} cluster: NanJing, new ips size: 1, content: [10.102.11.166:8201:unknown:NanJing_1.0_true_false_NanJing]
+
+2022-05-03 14:40:27,387 INFO [IP-UPDATED] namespace: 5f3efcde-3a25-41c3-8830-c250575be78d, service: DEFAULT_GROUP@@book-service, ips: 10.102.11.166:8202_true,10.102.11.166:8201_true,
+
+2022-05-03 14:41:11,426 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: BeiJing, new ips size: 1, content: [10.102.11.166:8102:unknown:BeiJing_1.0_true_false_BeiJing]
+
+2022-05-03 14:41:11,427 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 10.102.11.166:8102_true,
+
+2022-05-03 14:41:15,009 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: NanJing, new ips size: 1, content: [10.102.11.166:8101:unknown:NanJing_1.0_true_false_NanJing]
+
+2022-05-03 14:41:15,009 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 10.102.11.166:8102_true,10.102.11.166:8101_true,
+
+2022-05-03 14:45:03,681 INFO DEFAULT_GROUP@@book-service {SYNC} {IP-DEAD} cluster: BeiJing, dead ips size: 1, content: [10.102.11.166:8202:unknown:BeiJing_1.0_true_false_BeiJing]
+
+2022-05-03 14:45:03,683 INFO [IP-UPDATED] namespace: 5f3efcde-3a25-41c3-8830-c250575be78d, service: DEFAULT_GROUP@@book-service, ips: 10.102.11.166:8201_true,
+
+2022-05-03 14:45:03,684 INFO DEFAULT_GROUP@@book-service {SYNC} {IP-DEAD} cluster: NanJing, dead ips size: 1, content: [10.102.11.166:8201:unknown:NanJing_1.0_true_false_NanJing]
+
+2022-05-03 14:45:03,685 INFO [IP-UPDATED] namespace: 5f3efcde-3a25-41c3-8830-c250575be78d, service: DEFAULT_GROUP@@book-service, ips: 
+
+2022-05-03 14:45:14,801 INFO DEFAULT_GROUP@@book-service {SYNC} {IP-NEW} cluster: BeiJing, new ips size: 1, content: [10.102.11.166:8202:unknown:BeiJing_1.0_true_false_BeiJing]
+
+2022-05-03 14:45:14,802 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@book-service, ips: 10.102.11.166:8202_true,
+
+2022-05-03 14:45:21,543 INFO DEFAULT_GROUP@@book-service {SYNC} {IP-NEW} cluster: NanJing, new ips size: 1, content: [10.102.11.166:8201:unknown:NanJing_1.0_true_false_NanJing]
+
+2022-05-03 14:45:21,544 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@book-service, ips: 10.102.11.166:8202_true,10.102.11.166:8201_true,
+
+2022-05-03 16:01:44,147 INFO {POS} {IP-DISABLED} valid: 10.102.11.166:8102@BeiJing@DEFAULT_GROUP@@user-service, region: unknown, msg: client timeout after 15000, last beat: 1651564678267
+
+2022-05-03 16:01:44,189 INFO {POS} {IP-DISABLED} valid: 10.102.11.166:8101@NanJing@DEFAULT_GROUP@@user-service, region: unknown, msg: client timeout after 15000, last beat: 1651564676801
+
+2022-05-03 16:01:44,602 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-DEAD} cluster: NanJing, dead ips size: 1, content: [10.102.11.166:8101:unknown:NanJing_1.0_false_false_NanJing]
+
+2022-05-03 16:01:44,603 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 10.102.11.166:8102_false,
+
+2022-05-03 16:01:44,618 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-DEAD} cluster: BeiJing, dead ips size: 1, content: [10.102.11.166:8102:unknown:BeiJing_1.0_false_false_BeiJing]
+
+2022-05-03 16:01:44,618 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 
+
+2022-05-03 16:01:45,486 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: NanJing, new ips size: 1, content: [10.102.11.166:8101:unknown:NanJing_1.0_true_false_NanJing]
+
+2022-05-03 16:01:45,487 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 10.102.11.166:8101_true,
+
+2022-05-03 16:01:46,922 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: BeiJing, new ips size: 1, content: [10.102.11.166:8102:unknown:BeiJing_1.0_true_false_BeiJing]
+
+2022-05-03 16:01:46,922 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 10.102.11.166:8102_true,10.102.11.166:8101_true,
+
+2022-05-03 17:29:10,763 INFO DEFAULT_GROUP@@book-service {SYNC} {IP-DEAD} cluster: BeiJing, dead ips size: 1, content: [10.102.11.166:8202:unknown:BeiJing_1.0_true_false_BeiJing]
+
+2022-05-03 17:29:10,766 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@book-service, ips: 10.102.11.166:8201_true,
+
+2022-05-03 17:29:10,829 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-DEAD} cluster: BeiJing, dead ips size: 1, content: [10.102.11.166:8102:unknown:BeiJing_1.0_true_false_BeiJing]
+
+2022-05-03 17:29:10,829 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 10.102.11.166:8101_true,
+
+2022-05-03 17:29:10,861 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-DEAD} cluster: NanJing, dead ips size: 1, content: [10.102.11.166:8101:unknown:NanJing_1.0_true_false_NanJing]
+
+2022-05-03 17:29:10,861 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 
+
+2022-05-03 17:29:10,870 INFO DEFAULT_GROUP@@book-service {SYNC} {IP-DEAD} cluster: NanJing, dead ips size: 1, content: [10.102.11.166:8201:unknown:NanJing_1.0_true_false_NanJing]
+
+2022-05-03 17:29:10,870 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@book-service, ips: 
+
+2022-05-03 17:29:10,882 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 10.102.11.166:8301_true,
+
+2022-05-03 17:29:11,651 INFO serviceName: DEFAULT_GROUP@@borrow-service {POS} {IP-DISABLED} invalid-now: 10.102.11.166:8301@NanJing, region: unknown, msg: tcp:unable2connect:Connection refused
+
+2022-05-03 17:29:27,645 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 10.102.11.166:8301_false,
+
+2022-05-03 17:29:28,512 INFO serviceName: DEFAULT_GROUP@@borrow-service {OTHER} {IP-ENABLED} pre-valid: 10.102.11.166:8301@NanJing in 1, msg: tcp:ok+
+
+2022-05-03 17:29:30,692 INFO DEFAULT_GROUP@@book-service {SYNC} {IP-NEW} cluster: BeiJing, new ips size: 1, content: [10.102.11.166:8202:unknown:BeiJing_1.0_true_false_BeiJing]
+
+2022-05-03 17:29:30,692 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@book-service, ips: 10.102.11.166:8202_true,
+
+2022-05-03 17:29:32,804 INFO serviceName: DEFAULT_GROUP@@borrow-service {OTHER} {IP-ENABLED} pre-valid: 10.102.11.166:8301@NanJing in 2, msg: tcp:ok+
+
+2022-05-03 17:29:34,768 INFO DEFAULT_GROUP@@book-service {SYNC} {IP-NEW} cluster: NanJing, new ips size: 1, content: [10.102.11.166:8201:unknown:NanJing_1.0_true_false_NanJing]
+
+2022-05-03 17:29:34,768 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@book-service, ips: 10.102.11.166:8202_true,10.102.11.166:8201_true,
+
+2022-05-03 17:29:36,025 INFO serviceName: DEFAULT_GROUP@@borrow-service {POS} {IP-ENABLED} valid: 10.102.11.166:8301@NanJing, region: unknown, msg: tcp:ok+
+
+2022-05-03 17:29:38,819 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: BeiJing, new ips size: 1, content: [10.102.11.166:8102:unknown:BeiJing_1.0_true_false_BeiJing]
+
+2022-05-03 17:29:38,819 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 10.102.11.166:8102_true,
+
+2022-05-03 17:29:42,161 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: NanJing, new ips size: 1, content: [10.102.11.166:8101:unknown:NanJing_1.0_true_false_NanJing]
+
+2022-05-03 17:29:42,162 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 10.102.11.166:8102_true,10.102.11.166:8101_true,
+
+2022-05-03 18:27:53,997 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-DEAD} cluster: BeiJing, dead ips size: 1, content: [10.102.11.166:8102:unknown:BeiJing_1.0_true_false_BeiJing]
+
+2022-05-03 18:27:53,999 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 10.102.11.166:8101_true,
+
+2022-05-03 18:27:54,015 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-DEAD} cluster: NanJing, dead ips size: 1, content: [10.102.11.166:8101:unknown:NanJing_1.0_true_false_NanJing]
+
+2022-05-03 18:27:54,015 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 
+
+2022-05-03 18:28:12,536 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: BeiJing, new ips size: 1, content: [10.102.11.166:8102:unknown:BeiJing_1.0_true_false_BeiJing]
+
+2022-05-03 18:28:12,536 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 10.102.11.166:8102_true,
+
+2022-05-03 18:28:17,077 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: NanJing, new ips size: 1, content: [10.102.11.166:8101:unknown:NanJing_1.0_true_false_NanJing]
+
+2022-05-03 18:28:17,077 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 10.102.11.166:8102_true,10.102.11.166:8101_true,
+
+2022-05-03 18:38:31,434 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-DEAD} cluster: BeiJing, dead ips size: 1, content: [10.102.11.166:8102:unknown:BeiJing_1.0_true_false_BeiJing]
+
+2022-05-03 18:38:31,435 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 10.102.11.166:8101_true,
+
+2022-05-03 18:38:31,462 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-DEAD} cluster: NanJing, dead ips size: 1, content: [10.102.11.166:8101:unknown:NanJing_1.0_true_false_NanJing]
+
+2022-05-03 18:38:31,462 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 
+
+2022-05-03 18:38:44,735 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: BeiJing, new ips size: 1, content: [10.102.11.166:8102:unknown:BeiJing_1.0_true_false_BeiJing]
+
+2022-05-03 18:38:44,735 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 10.102.11.166:8102_true,
+
+2022-05-03 18:38:49,216 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: NanJing, new ips size: 1, content: [10.102.11.166:8101:unknown:NanJing_1.0_true_false_NanJing]
+
+2022-05-03 18:38:49,217 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 10.102.11.166:8102_true,10.102.11.166:8101_true,
+
+2022-05-03 19:50:23,428 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 10.102.11.166:8301_true,
+
+2022-05-03 19:50:23,565 INFO serviceName: DEFAULT_GROUP@@borrow-service {POS} {IP-DISABLED} invalid-now: 10.102.11.166:8301@NanJing, region: unknown, msg: tcp:unable2connect:Connection refused
+
+2022-05-03 19:50:40,343 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 10.102.11.166:8301_false,
+
+2022-05-03 19:50:40,438 INFO serviceName: DEFAULT_GROUP@@borrow-service {OTHER} {IP-ENABLED} pre-valid: 10.102.11.166:8301@NanJing in 1, msg: tcp:ok+
+
+2022-05-03 19:50:44,727 INFO serviceName: DEFAULT_GROUP@@borrow-service {OTHER} {IP-ENABLED} pre-valid: 10.102.11.166:8301@NanJing in 2, msg: tcp:ok+
+
+2022-05-03 19:50:47,944 INFO serviceName: DEFAULT_GROUP@@borrow-service {POS} {IP-ENABLED} valid: 10.102.11.166:8301@NanJing, region: unknown, msg: tcp:ok+
+
+2022-05-03 20:02:32,653 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 10.102.11.166:8301_true,
+
+2022-05-03 20:02:33,026 INFO serviceName: DEFAULT_GROUP@@borrow-service {POS} {IP-DISABLED} invalid-now: 10.102.11.166:8301@NanJing, region: unknown, msg: tcp:unable2connect:Connection refused
+
+2022-05-03 20:02:48,903 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 10.102.11.166:8301_false,
+
+2022-05-03 20:02:49,889 INFO serviceName: DEFAULT_GROUP@@borrow-service {OTHER} {IP-ENABLED} pre-valid: 10.102.11.166:8301@NanJing in 1, msg: tcp:ok+
+
+2022-05-03 20:02:54,179 INFO serviceName: DEFAULT_GROUP@@borrow-service {OTHER} {IP-ENABLED} pre-valid: 10.102.11.166:8301@NanJing in 2, msg: tcp:ok+
+
+2022-05-03 20:02:57,399 INFO serviceName: DEFAULT_GROUP@@borrow-service {POS} {IP-ENABLED} valid: 10.102.11.166:8301@NanJing, region: unknown, msg: tcp:ok+
+
+2022-05-03 20:10:29,282 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 10.102.11.166:8301_true,
+
+2022-05-03 20:10:29,552 INFO serviceName: DEFAULT_GROUP@@borrow-service {POS} {IP-DISABLED} invalid-now: 10.102.11.166:8301@NanJing, region: unknown, msg: tcp:unable2connect:Connection refused
+
+2022-05-03 20:10:45,245 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 10.102.11.166:8301_false,
+
+2022-05-03 20:10:46,428 INFO serviceName: DEFAULT_GROUP@@borrow-service {OTHER} {IP-ENABLED} pre-valid: 10.102.11.166:8301@NanJing in 1, msg: tcp:ok+
+
+2022-05-03 20:10:50,719 INFO serviceName: DEFAULT_GROUP@@borrow-service {OTHER} {IP-ENABLED} pre-valid: 10.102.11.166:8301@NanJing in 2, msg: tcp:ok+
+
+2022-05-03 20:10:53,940 INFO serviceName: DEFAULT_GROUP@@borrow-service {POS} {IP-ENABLED} valid: 10.102.11.166:8301@NanJing, region: unknown, msg: tcp:ok+
+
+2022-05-03 20:40:10,168 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 10.102.11.166:8301_true,
+
+2022-05-03 20:40:10,893 INFO serviceName: DEFAULT_GROUP@@borrow-service {POS} {IP-DISABLED} invalid-now: 10.102.11.166:8301@NanJing, region: unknown, msg: tcp:unable2connect:Connection refused
+
+2022-05-03 20:40:27,344 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 10.102.11.166:8301_false,
+
+2022-05-03 20:40:27,766 INFO serviceName: DEFAULT_GROUP@@borrow-service {OTHER} {IP-ENABLED} pre-valid: 10.102.11.166:8301@NanJing in 1, msg: tcp:ok+
+
+2022-05-03 20:40:32,058 INFO serviceName: DEFAULT_GROUP@@borrow-service {OTHER} {IP-ENABLED} pre-valid: 10.102.11.166:8301@NanJing in 2, msg: tcp:ok+
+
+2022-05-03 20:40:35,085 INFO serviceName: DEFAULT_GROUP@@borrow-service {POS} {IP-ENABLED} valid: 10.102.11.166:8301@NanJing, region: unknown, msg: tcp:ok+
+
+2022-05-03 20:40:37,644 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-DEAD} cluster: BeiJing, dead ips size: 1, content: [10.102.11.166:8102:unknown:BeiJing_1.0_true_false_BeiJing]
+
+2022-05-03 20:40:37,644 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 10.102.11.166:8101_true,
+
+2022-05-03 20:40:37,645 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-DEAD} cluster: NanJing, dead ips size: 1, content: [10.102.11.166:8101:unknown:NanJing_1.0_true_false_NanJing]
+
+2022-05-03 20:40:37,645 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 
+
+2022-05-03 20:42:49,902 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 10.102.11.166:8301_true,
+
+2022-05-03 20:42:50,582 INFO serviceName: DEFAULT_GROUP@@borrow-service {POS} {IP-DISABLED} invalid-now: 10.102.11.166:8301@NanJing, region: unknown, msg: tcp:unable2connect:Connection refused
+
+2022-05-03 20:43:05,332 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrow-service, ips: 10.102.11.166:8301_false,
+
+2022-05-03 20:43:07,450 INFO serviceName: DEFAULT_GROUP@@borrow-service {OTHER} {IP-ENABLED} pre-valid: 10.102.11.166:8301@NanJing in 1, msg: tcp:ok+
+
+2022-05-03 20:43:11,740 INFO serviceName: DEFAULT_GROUP@@borrow-service {OTHER} {IP-ENABLED} pre-valid: 10.102.11.166:8301@NanJing in 2, msg: tcp:ok+
+
+2022-05-03 20:43:14,960 INFO serviceName: DEFAULT_GROUP@@borrow-service {POS} {IP-ENABLED} valid: 10.102.11.166:8301@NanJing, region: unknown, msg: tcp:ok+
+
+2022-05-03 20:43:26,535 INFO DEFAULT_GROUP@@book-service {SYNC} {IP-DEAD} cluster: NanJing, dead ips size: 1, content: [10.102.11.166:8201:unknown:NanJing_1.0_true_false_NanJing]
+
+2022-05-03 20:43:26,540 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@book-service, ips: 10.102.11.166:8202_true,
+
+2022-05-03 20:43:45,596 INFO DEFAULT_GROUP@@book-service {SYNC} {IP-DEAD} cluster: BeiJing, dead ips size: 1, content: [10.102.11.166:8202:unknown:BeiJing_1.0_true_false_BeiJing]
+
+2022-05-03 20:43:45,597 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@book-service, ips: 
+

@@ -12,4 +12,5 @@
 
 2. **Nacos**：部署nacos服务端，基于nacos实现服务注册与发现、集群分区，使用nacos配置中心实现热部署，使用命名空间进行配置隔离。
 3. **Sentinel**：部署Sentinel服务端，基于Sentinel实现流量控制，实现限流、异常处理、服务熔断与降级等。使用python发送http请求测试限流情况及效果。
+4. **Seata**:基于seata实现分布式事务控制。
 

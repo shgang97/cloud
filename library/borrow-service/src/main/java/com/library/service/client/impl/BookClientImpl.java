@@ -14,4 +14,14 @@ public class BookClientImpl implements BookClient {
     public Book getBookById(int bid) {
         return new Book().setDesc("替代方案");
     }
+
+    @Override
+    public int getRemain(int bid) {
+        return 0;
+    }
+
+    @Override
+    public boolean borrow(int bid) {
+        return false;
+    }
 }

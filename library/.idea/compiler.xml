@@ -7,28 +7,32 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="auth-service" />
         <module name="user-service" />
         <module name="book-service" />
-        <module name="test" />
         <module name="commons" />
         <module name="borrow-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="auth-service" target="11" />
       <module name="book-service" target="11" />
       <module name="borrow-service" target="11" />
       <module name="commons" target="11" />
       <module name="library" target="11" />
+      <module name="outh-service" target="11" />
       <module name="test" target="11" />
       <module name="user-service" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auth-service" options="-parameters" />
       <module name="book-service" options="-parameters" />
       <module name="borrow-service" options="-parameters" />
       <module name="commons" options="-parameters" />
       <module name="library" options="-parameters" />
+      <module name="outh-service" options="-parameters" />
       <module name="test" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>

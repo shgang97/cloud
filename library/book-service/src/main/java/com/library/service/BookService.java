@@ -7,5 +7,9 @@ import com.library.entity.Book;
  * @create: 2022-04-30 8:51 下午
  */
 public interface BookService {
-    Book getBookById(int bid);
+    Book findBookById(int bid);
+
+    boolean updateRemain(int bid, int stock);
+
+    int findStockById(int bid);
 }

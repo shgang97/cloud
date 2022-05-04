@@ -5,6 +5,7 @@ import com.library.service.client.impl.UserClientImpl;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
  * @author: shg
@@ -14,4 +15,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface UserClient {
     @RequestMapping("/user/{uid}")
     User getUserById(@PathVariable("uid") int uid);
+
+    @RequestMapping(value = "/user/remain/{id}", method = RequestMethod.GET)
+    int findRestById(@PathVariable("id") int id);
+
+    @RequestMapping(value = "/user/borrow/{id}", method = RequestMethod.GET)
+    int borrowOneBook(@PathVariable("id") int id);
 }

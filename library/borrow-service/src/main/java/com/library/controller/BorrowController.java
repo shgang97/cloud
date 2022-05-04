@@ -1,5 +1,6 @@
 package com.library.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.library.entity.BorrowDetail;
 import com.library.service.BorrowService;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -33,5 +34,17 @@ public class BorrowController {
     BorrowDetail findBorrowDetail(@PathVariable("uid") int uid,
                                   @PathVariable("bid") int bid){
         return borrowService.findBorrowDetailByUidAndBid(uid, bid);
+    }
+
+    @RequestMapping("/borrow/take/{uid}/{bid}")
+    JSONObject borrow(@PathVariable("uid") int uid,
+                      @PathVariable("bid") int bid){
+        borrowService.doBorrow(uid, bid);
+
+        JSONObject object = new JSONObject();
+        object.put("code", "200");
+        object.put("success", false);
+        object.put("message", "借阅成功！");
+        return object;
     }
 }
